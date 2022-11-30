@@ -1,0 +1,108 @@
+a{color: white;text-decoration: none;}
+nav{
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    z-index: 20;
+    background-color: var(--maincolor1);
+}
+
+.menubtn{
+    display: inline-flex;
+    position: absolute;
+    left: 83%;
+    width: 8%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+}
+
+
+.menubtn:active{
+    box-shadow: rgba(0, 0, 0, 0.281) 0px 2px 8px 0px;
+    background-color: rgb(52, 54, 73);
+}
+
+.event-menubtn1 #bar-1{transform: translate(10vw);}
+.event-menubtn2 #bar-2{transform: rotate(40deg); transform-origin: 10% ;stroke: var(--maincolor2);}
+.event-menubtn2 #bar-3{transform: rotate(-40deg);transform-origin: 30% ;stroke: var(--maincolor2);}
+.event-menubtn1-post #bar-1{transform: translate(0vw);}
+.event-menubtn2-post #bar-2{transform: rotate(0deg);transform-origin:-10%;}
+.event-menubtn2-post #bar-3{transform: rotate(0deg);transform-origin:-30%;}
+nav>ul{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 92vh;
+    top: 100%;
+    background-color:var(--maincolor1);
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    left: 100%;
+    transition: all .5s ease-in;
+    z-index: 20;
+}
+.nav__listitem{
+    display: inline-flex;
+    position: relative;
+    width: 70%;
+    height: 8%;
+    border-radius: 2vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}.nav__listitem a{transition: all 0s ease-in-out;}
+.nav__listitem:active{
+    background-color: var(--maincolor2);
+}
+.nav__listitem a{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+/*eventos*/
+
+.event-menu1{display: inline-flex;}
+.event-menu2{left: 0%;}
+.event-menu3{left: 100%;}
+
+@media screen and (min-width:500px){
+    .menubtn{left: 90%;
+    height: 70%;width: 7%;}
+    .menubtn svg{
+        width: 100%;
+        display: block;
+    }
+}
+@media screen and (min-width:1000px){
+    .menubtn{
+        display: none;
+    }
+    nav>ul{
+        display: inline-flex;
+        position: relative;
+        left: 0%;
+        height: 8vh;
+        top: 0%;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .nav__listitem{
+        width: 10rem;
+        height: 70%;
+        border-radius: .5vw;
+        margin: 1vh;
+    }
+    .nav__listitem:hover a{border-bottom: var(--maincolor2) 3px solid;}
+    .nav__listitem:active a{border: rgba(255, 255, 255, 0);}
+    
+}
