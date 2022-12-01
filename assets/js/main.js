@@ -81,7 +81,30 @@ if (width<=1000) {
         servicesE.insertAdjacentElement("beforeend",rightArrow)
     })
 }
-
+let portArrL=document.querySelector(".port__arr-L")
+let portArrR=document.querySelector(".port__arr-R")
+let anchor=document.querySelector(".portfolio__cont>a")
+let imgport=document.querySelector("#port-imgmain")
+let index=1
+let arregloPortafolio=[{href:"https://graceful-dango-bb058a.netlify.app",src:"/assets/sources/Portfolio/Ourstory.png"},{href:"https://unique-custard-105852.netlify.app",src:"/assets/sources/Portfolio/Ecommerce.jpeg"},{href:"https://lucent-youtiao-e4deb2.netlify.app",src:"/assets/sources/Portfolio/Focusonrelax.jpeg"}]
+anchor.href=arregloPortafolio[0].href
+imgport.src=arregloPortafolio[0].src
+portArrL.addEventListener("click",()=>{
+    anchor.href=arregloPortafolio[index].href
+    imgport.src=arregloPortafolio[index].src
+    index--
+    if (index==-1) {
+        index=2
+    }
+})
+portArrR.addEventListener("click",()=>{
+    anchor.href=arregloPortafolio[index].href
+    imgport.src=arregloPortafolio[index].src
+    index++
+    if (index==3) {
+        index= 0
+    }
+})
 
 copyemail.addEventListener("click",()=>{
     let string=copyemail.textContent
