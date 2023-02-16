@@ -11,7 +11,7 @@
     <title>MyPortfolio</title>
 </head>
 <body>
-    <section class="section maincontent">
+    <section class="section maincontent" id="home">
         <nav class="maincontent__nav">
             <div class="menubtn">
                 <svg width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
@@ -21,12 +21,12 @@
                 </svg>
             </div>
             <ul>
-                <li class="nav__listitem"><a href="#">Home</a></li>
-                <li class="nav__listitem"><a href="#">Acerca de mi</a></li>
-                <li class="nav__listitem"><a href="#">Servicios</a></li>
-                <li class="nav__listitem"><a href="#">Mis habilidades</a></li>
-                <li class="nav__listitem"><a href="#">Portafolio</a></li>
-                <li class="nav__listitem"><a href="#">Contacto</a></li>
+                <li class="nav__listitem"><a href="#home">Home</a></li>
+                <li class="nav__listitem"><a href="#aboutme">Acerca de mi</a></li>
+                <li class="nav__listitem"><a href="#services">Servicios</a></li>
+                <li class="nav__listitem"><a href="#skills">Mis habilidades</a></li>
+                <li class="nav__listitem"><a href="#portfolio">Portafolio</a></li>
+                <li class="nav__listitem"><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
             <div class="header__bg-circle">
@@ -37,7 +37,7 @@
             </div>
             <div class="info">
                 <p>Jr Developer Js/React</p>
-                <p id="time-exp"><span>6 Meses</span>de experiencia</p>
+                <p id="time-exp"><span>12 Meses</span>de experiencia</p>
             </div>
             <div class="socials">
                 <div class="social social1">
@@ -82,7 +82,7 @@
             </div>
         </main>
     </section>
-    <section class="section aboutme" >
+    <section class="section aboutme" id="aboutme">
         <h2>Acerca de mi</h2>
         <p>Soy un programador nuevo, aspiro a ser un buen frontend developer, me apasiona el desarrollo, inovar, crear y planear proyectos, me gusta el diseño funcional y el hacer lucir bien las cosas, en general amo el codigo e integrarme en proyectos y seguir aprendiendo sobre diferentes tecnologias, me considero un entusiasta el desarrollo web y me gustaria crear fantasticas webs y apps :D</p>
         <div class="p-languages">
@@ -92,7 +92,7 @@
             <div class="p-l p-l4"><img id="react" src="/assets/sources/Iconos/designdevelopmentfacebookframeworkmobilereacticon-1320165723839064798.png" alt=""></div>
         </div>
     </section>
-    <section class="section services" >
+    <section class="section services" id="services">
         <h2>services</h2>
         <div class="cont-services service1 mainserv">
             <img src="/assets/sources/Iconos/pencil.svg" alt="">
@@ -110,7 +110,7 @@
             <p>Investigacion de mercado, diseño y metricas</p>
         </div>
     </section>
-    <section class="section skills" >
+    <section class="section skills" id="skills" >
         <h2>skills</h2>
         <div class="metric">
             <h3>Developing</h3>
@@ -134,15 +134,15 @@
             </div>
         </div>
     </section>
-    <section class="section portfolio">
+    <section class="section portfolio" id="portfolio">
         <h2>portfolio</h2>
         <div class="portfolio__cont">    
             <div class="arrow__port port__arr-L"><i class="fa-solid fa-chevron-left"></i></div>
-            <a href="" target="_blank"><div class="portfolio__img"><img id="port-imgmain" src="/assets/sources/Portfolio/Focusonrelax.jpeg" alt=""></div></a> 
+            <a href="" target="_blank"><div class="portfolio__img"><img id="port-imgmain" src="" alt=""></div></a> 
             <div class="arrow__port port__arr-R"><i class="fa-solid fa-chevron-right"></i></div> 
         </div>
     </section>
-    <section class="section contact">
+    <section class="section contact" id="contact">
         <h2>contact</h2>
         <div class="cont-contact">
             <p class="pemail">Thejosuescript@gmail.com</p>
